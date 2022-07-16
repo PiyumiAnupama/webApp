@@ -28,7 +28,7 @@ const Header = () => {
       >
         <Toolbar>
           <Typography  variant="h4">
-            Hotel Blog
+            Book Worm Blog
           </Typography>
           {isLoggedIn && (
             <Box display="flex" marginLeft={"auto"} marginRight="auto">
@@ -41,19 +41,19 @@ const Header = () => {
                   
                   LinkComponent={Link}
                   to="/blogs"
-                  label="All Blogs"
+                  label="Home"
                 />
                 <Tab
                   
                   LinkComponent={Link}
                   to="/myBlogs"
-                  label="My Blogs"
+                  label="My Review"
                 />
                 <Tab
                  
                   LinkComponent={Link}
                   to="/blogs/add"
-                  label="Add Blog"
+                  label="Add Review"
                 />
               </Tabs>
             </Box>
