@@ -19,6 +19,7 @@ export const Blogs = () => {
   console.log(blogs);
   return (
     <div> 
+     
     {blogs &&
       blogs.map((blog, index) => (
         <Blog

@@ -55,7 +55,7 @@ const Auth = () => {
   };
 
   return (
-    <div>
+    <div  >
       <form onSubmit={handleSubmit}>
         <Box
           maxWidth={400}

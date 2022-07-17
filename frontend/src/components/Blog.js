@@ -33,15 +33,17 @@ const Blog = ({ title, description, imageURL, userName, isUser, id }) => {
       .then(() => navigate("/blogs"));
   };
   return (
-    <div>
+    
+    <div >
+    
       {" "}
       <Card
         sx={{
-          width: "40%",
+          width: "45%",
           margin: "auto",
           mt: 2,
           padding: 2,
-          boxShadow: "5px 5px 10px #ccc",
+          boxShadow: "10px 10px 10px #ccc",
           ":hover": {
             boxShadow: "10px 10px 20px #ccc",
           },
@@ -57,12 +59,13 @@ const Blog = ({ title, description, imageURL, userName, isUser, id }) => {
             </IconButton>
           </Box>
         )}
-        <CardHeader
+        <CardHeader sx={{marginTop: -8 ,marginBottom: 3}}
           avatar={
             <Avatar
             
-              sx={{ bgcolor: "red" }}
+              sx={{ bgcolor: "red"}}
               aria-label="recipe"
+              
             >
               {userName ? userName.charAt(0) : ""}
             </Avatar>
@@ -71,9 +74,11 @@ const Blog = ({ title, description, imageURL, userName, isUser, id }) => {
         />
         <CardMedia
           component="img"
-          height="194"
+          height={300}
+          
           image={imageURL}
           alt="Paella dish"
+          
         />
 
         <CardContent>

@@ -16,7 +16,7 @@ const UserBlogs = () => {
   }, []);
   console.log(user);
   return (
-    <div>
+    <div  >
       {" "}
       {user &&
         user.blogs &&
