@@ -59,7 +59,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id }) => {
             </IconButton>
           </Box>
         )}
-        <CardHeader sx={{marginTop: -8 ,marginBottom: 3}}
+        <CardHeader 
           avatar={
             <Avatar
             
@@ -70,6 +70,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id }) => {
               {userName ? userName.charAt(0) : ""}
             </Avatar>
           }
+          
           title={title}
         />
         <CardMedia
@@ -77,7 +78,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id }) => {
           height={300}
           
           image={imageURL}
-          alt="Paella dish"
+          alt="book review"
           
         />
 
@@ -89,7 +90,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id }) => {
             variant="body2"
             color="text.secondary"
           >
-            <b>{userName}</b> {": "} {description}
+            <b></b>  {description}
           </Typography>
         </CardContent>
       </Card>

@@ -59,7 +59,7 @@ const BlogDetail = () => {
         <form onSubmit={handleSubmit}>
           <Box
             border={3}
-            borderColor="linear-gradient(90deg, rgba(58,75,180,1) 2%, rgba(116,49,110,1) 36%, rgba(2,0,161,1) 73%, rgba(69,92,252,1) 100%)"
+            borderColor="yellow"
             borderRadius={10}
             boxShadow="10px 10px 20px #ccc"
             padding={3}
@@ -96,9 +96,9 @@ const BlogDetail = () => {
             />
 
             <Button
-              sx={{ mt: 2, borderRadius: 4 }}
+              sx={{ mt: 2, borderRadius: 4 , color: 'white'}}
               variant="contained"
-              color="warning"
+              
               type="submit"
             >
               Submit

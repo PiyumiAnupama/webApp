@@ -28,7 +28,7 @@ const Header = () => {
       >
         <Toolbar>
           <Typography  variant="h4">
-            Book Worm Blog
+            BookWorm Blog
           </Typography>
           {isLoggedIn && (
             <Box display="flex" marginLeft={"auto"} marginRight="auto">
